@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Program_2</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            color: black;   
+            font-size: 18px;
+        }
+        h1,h2,h3,h4,h5,h6,p,ul{
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        h1{
+            margin-bottom: 16px !important;
+        }
+        span{
+            margin-top: 30px !important;
+            color: yellowgreen;
+            font-size: 24px !important;
+        }
+        
+    </style>
+</head>
+<body>
+   <section class="section_js">
+    <div class="container">
+        <div class="row mt-5">
+           <div class="offset-3 col-md-6 offset-3 text-center">
+            <h1>Letter Grades in Javascript</h1>
+            <script>
+                var marks = prompt("Enter your Marks:");
+        
+                if(marks>=80 && marks<=100){
+                    document.write("<span>Yot Got A+</span>");
+                }
+                else if(marks>=70 && marks<80){
+                    document.write("<span>You Got A</span>");
+                }
+                else if(marks>=60 && marks<70){
+                    document.write("<span>You Got A-</span>");
+                }
+                else if(marks>=50 && marks<60){
+                    document.write("<span>You Got B</span>");
+                }
+                else if(marks>=40 && marks<50){
+                    document.write("<span>You Got C</span>");
+                }
+                else if(marks>=33 && marks<40){
+                    document.write("<span>You Got D</span>");
+                }
+                else if(marks<33){
+                    document.write("<span>You Have Failed!</span>");
+                }
+                else{
+                    document.write("<span>Invalid Marks!</span>");
+                }
+            </script>
+           </div>
+        </div>
+    </div>
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
